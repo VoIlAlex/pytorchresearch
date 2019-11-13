@@ -19,7 +19,7 @@ import torch
 import matplotlib.pyplot as plt
 import importlib
 from .path_generation import ModelPathGenerator
-from .utils import unfinished_class
+from .decorators import unfinished_class
 
 
 # TODO: use kwargs from Research as SUPER kwargs. So they have more priority with regard of items' kwargs
