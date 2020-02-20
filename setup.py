@@ -1,9 +1,11 @@
 from distutils.core import setup
+from setuptools import find_packages
+
 setup(
     name='pytorchresearch',         # How you named your package folder (MyLib)
-    packages=['pytorchresearch'],   # Chose the same as "name"
+    packages=find_packages('.'),   # Chose the same as "name"
     # Start with a small number and increase it with every change you make
-    version='1.0.3-alpha',
+    version='2.0.0-alpha',
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
     # Give a short description about your library
@@ -13,7 +15,7 @@ setup(
     # Provide either the link to your github or to your website
     url='https://github.com/VoIlAlex/pytorchresearch',
     # I explain this later on
-    download_url='https://github.com/VoIlAlex/pytorchresearch/archive/v1.0.0-alpha.tar.gz',
+    download_url='https://github.com/VoIlAlex/pytorchresearch/archive/v2.0.0-alpha.tar.gz',
     # Keywords that define your package best
     keywords=['framework', 'automation', 'research', 'science',
               'machine learning', 'deep learning', 'pytorch'],

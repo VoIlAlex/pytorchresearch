@@ -5,3 +5,6 @@ __pycache__/
 bin/
 dist/
 __pycache__/
+.temp/
+data/
+pytorchresearch.egg-info/

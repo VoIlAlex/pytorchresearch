@@ -1,7 +1,7 @@
 import os
-from .visualizer import Visualizer
+from .utils.visualizer import Visualizer
+from .utils.decorators import unfinished_class, unfinished_function
 import matplotlib.pyplot as plt
-from .decorators import unfinished_class, unfinished_function
 
 
 class ResearchItem:
