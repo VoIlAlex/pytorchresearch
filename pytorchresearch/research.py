@@ -16,6 +16,7 @@
 
 import os
 import torch
+import types
 import matplotlib.pyplot as plt
 import importlib
 from .utils.path_generation import ModelPathGenerator
@@ -203,18 +204,18 @@ class ModelResearch(Research):
 
 @unfinished_class
 class ResearchSession:
-    def __init__(self, config_module: str, root_path: str):
+    def __init__(self, config_module: types.ModuleType, root_path: str):
         self._config_module = config_module
         self._root_path = root_path
 
     def start_research_session(self):
         # here we process a banach of
         # models written in config files
-        research_list = self.__parse_config_file()
+        research_list = self.__parse_config()
         for (research, kwargs) in research_list:
             research.start_research_session(**kwargs)
 
-    def __parse_config_file(self):
+    def __parse_config(self):
         # importlib.reload(self._config_module)
         research_list = []
         for session_description in self._config_module.RESEARCH_SESSION_CONFIG:

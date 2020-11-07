@@ -15,10 +15,6 @@ class ResearchItem:
             'by all the childs of ResearchItem class'
         )
 
-    def final_action(self, research_path, *args, **kwargs):
-        # TODO: Add final action support for items
-        None
-
 
 class CurrentIterationItem(ResearchItem):
     def __init__(self, *args, **kwargs):

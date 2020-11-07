@@ -14,6 +14,5 @@ RESEARCH_SESSION_CONFIG = [
             'epochs': None,
             'iteration_modulo': None
         }
-
     }
 ]
